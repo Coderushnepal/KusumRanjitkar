@@ -16,15 +16,15 @@ body {
 /* style for header */
 .img-left {
     float: left;
+    padding-top: 8px;
 }
 
 
 .navigation ul {
     list-style-type: none;
-    padding-left: 600px;
+    padding-left: 300px;
     margin: 0px;
 }
-
 
 
 
@@ -251,7 +251,7 @@ p {
     font-size: 16px;
     line-height: 28px;
     align-items: center;
-    padding-left: 80px;
+    padding-left: 0px;
 
 }
 
@@ -262,7 +262,7 @@ p {
     line-height: 17px;
     align-items: center;
     padding-top: 16px;
-    padding-left: 80px;
+    padding-left: 0px;
 
 }
 
@@ -277,7 +277,7 @@ p {
 }
 
 .oracle-img {
-    padding-left: 75px;
+    padding-left: 55px;
 }
 
 .footer-section {
@@ -289,18 +289,28 @@ p {
 .footer-list2,
 .footer-list3,
 .footer-list4,
-.footer-list-right {
-    width: 290px;
+.footer-list5 {
+    width: 222px;
+    height: 180p;
     list-style-type: none;
-    padding-left: 80px;
+    padding-left: 20px;
     padding-top: 80px;
-    padding-right: 0px;
+    font-size: 14px;
+line-height: 24px;
 }
 
-.footer-top {
-    width: 100%;
-
+.footer-list2,
+.footer-list5 {
+   width: 222px;
+   height: 180px;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 60px;
+    font-size: 14px;
+line-height: 24px;
 }
+
+
 
 ul {
     list-style-type: none;
@@ -320,24 +330,52 @@ ul li a {
     color: black;
 }
 
-.footer-top h3 {
-    padding-bottom: 16px;
-}
 
-.footer-left {
+
+.footer-top {
 
 font-size: 12px;
 line-height: 28px;
 padding-top: 39px;
-padding-left: 165px;
+padding-left: 100px;
 padding-bottom: 16px;
 display: flex;
 align-items: center;
+width: 100%;
 
 }
 
+
+
+  
+  
+  
+    
+.vertical-menu {
+    width: 375px;
+    height :46px;
+display: flex;
+padding-top:91px;
+
+}
+
+.vertical-menu a {
+
+    padding: 12px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding-top:0px;
+}
+
+.vertical-menu a:hover {
+    background-color: rgb(228, 111, 111);
+
+}
 /* To those devices whose viewport is 0-600px. */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) 
+{
+    
     .container {
         max-width: 768px;
     }
@@ -423,7 +461,10 @@ align-items: center;
     }
 
     .oracle-img {
-        padding-left: 75px;
+        padding-left: 0px;
+    }
+    .oracle-info {
+        padding-left: 0px;
     }
 
 
@@ -444,12 +485,24 @@ align-items: center;
 
     .footer-top {
         width: 100%;
+        padding-left: 0px;
 
     }
 
+}
+.icon {
+    display: block;
+}
 
+.footer-right {
+    display: none;
+}
 
-    @media screen and (min-width: 1200px) {
+.footer-mobile {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
         .nav-right {
             display: block;
 
@@ -552,13 +605,19 @@ align-items: center;
         .oracle-img {
             width: 168px;
             height: 21px;
-            padding-left: 75px;
+            padding-left: 0px;
         }
 
         .oracle-info {
             width: 400px;
             font-size: 14px;
             line-height: 20px;
+            padding-left: 0px;
+    
+        }
+
+        .footer-top {
+            padding-left: 0px;
         }
 
         .course-section-left,
@@ -572,10 +631,28 @@ align-items: center;
         }
 
         .footer-section {
-
             display: block;
         }
 
-
+        .footer-left span {
+        font-size: 12px;
+       line-height: 28px;
+    padding: 67px 717px 16px 16px;
+        }
     }
+    .footer-list6 {
+        display: none;
+
+    
+    }
+.footer-right {
+    display: block;
+}
+
+.vertical-menu {
+    display: none;
+}
+ 
+
+
 }
