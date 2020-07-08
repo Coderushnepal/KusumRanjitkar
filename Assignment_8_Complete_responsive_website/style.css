@@ -354,7 +354,7 @@ width: 100%;
 .vertical-menu {
     width: 375px;
     height :46px;
-display: flex;
+display: block;
 padding-top:91px;
 
 }
@@ -498,7 +498,7 @@ padding-top:91px;
     display: none;
 }
 
-.footer-mobile {
+.vertical-menu{
     display: none;
 }
 
