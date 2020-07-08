@@ -14,10 +14,25 @@ body {
 }
 
 /* style for header */
+
+
 .img-left {
     float: left;
-    padding-top: 8px;
+
+    padding-top: 34px;
+    padding-left: 20px;
 }
+
+
+.navbar {
+    padding-top: 43px;
+
+}
+
+.nav-button {
+    display: none;
+}
+
 
 
 .navigation ul {
@@ -70,22 +85,23 @@ body {
 
 .dropdown1{
     float: right;
-    padding: 0px 80px 0px 10px;
+    padding: 34px 32.45px 20.45px 241px;
     cursor: pointer;
-    display: block;
+    display: inline;
     color: rgb(15, 15, 15);
 }
 
 .dropdown1 {
     position: relative;
-    display: inline-block;
+    display: inline;
+    
   }
   
   .dropdown1-content {
     display: none;
     position: absolute;
-    background-color: #e74b4b;
-    width: 200px;
+    
+    width: 400px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: -1;
@@ -93,12 +109,14 @@ body {
   
   .dropdown1:hover+.dropdown1-content {
     display: block;
+    
   }
 
   .dropdown1-content ul {
     list-style-type: none;
     padding-left: 300px;
     margin: 0px;
+    z-index: -1;
 }
 
 
@@ -106,8 +124,12 @@ body {
 
 .dropdown1-content li {
     list-style: none;
-
-}
+    display: block;
+    font-size: 14px;
+    padding: 12px 28px;
+    width: 600px;
+    background-color: rgb(66, 137, 219);
+    }
 
 
 
@@ -169,6 +191,8 @@ h1 {
     font-size: 40px;
     line-height: 49px;
     color: #000000;
+    padding-top: 0px;
+    
 }
 
 p {
@@ -254,6 +278,8 @@ p {
     text-decoration-line: underline;
     color: #798BFE;
     margin-left: 16px;
+    margin-top: 0px;
+    margin-bottom: 110px;
 }
 
 
@@ -351,11 +377,13 @@ footer {
 .dropdown-btn {
 	font-size: 16px;
 	line-height: 28px;
-	margin-bottom: 16px;
+    margin-bottom: 16px;
+    
 }
 
 .dropdown-btn span {
-	display: inline-block;
+    display: inline-block;
+    height:4px;
 }
 
 footer ul {
@@ -365,7 +393,7 @@ footer ul {
 footer ul li a {
 	font-size: 14px;
 	line-height: 24px;
-	dispaly: inline-block;
+	display: inline-block;
 	text-decoration: none;
 	color: black;
 }
@@ -534,10 +562,22 @@ line-height: 28px;
     
         .nav-right {
             display: block;
-
+padding-top: 43px;
 
         }
+.nav-right ul li a {
 
+    width: 37px;
+    height: 16px;
+}
+
+.nav-button {
+    margin-left: 850px;
+    margin-top: 28px;
+    width: 140px;
+    height: 45px;
+    display: inline;
+}
         .dropdown1 {
             display: none;
         }
