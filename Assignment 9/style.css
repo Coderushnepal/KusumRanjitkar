@@ -1,0 +1,167 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* start of main section  */
+.container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.main {
+    background-image: url(./img/Image.png);
+    background-size: cover;
+}
+
+img.left {
+    width: 73px;
+    height: 32px;
+    margin: 24px 0px;
+}
+
+a.contact {
+    text-decoration: underline;
+    color: black;
+}
+
+.contact-info {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 24px 0;
+}
+
+.intro-section {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+
+
+}
+
+.intro-section h1 {
+    font-size: 32px;
+    line-height: 34px;
+    margin: 20px 0;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.intro-section p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.request-btn {
+    font-size: 14px;
+    line-height: 16px;
+    height: 35px;
+    width: 140px;
+    background: #F33D01;
+    border-radius: 48px;
+    border-color: transparent;
+    color: white;
+    margin: 20px 50px;
+}
+
+/* To those devices whose viewport is 0-600px. */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .main {
+        padding-bottom: 40px;
+
+    }
+
+    .intro-section {
+        width: 60%;
+        margin: auto;
+    }
+
+    .intro-section p {
+        font-size: 19px;
+        line-height: 150%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .main {
+        padding: 23px 0;
+    }
+
+    .intro-section {
+        width: 40%;
+        text-align: center;
+        margin: auto;
+
+    }
+
+    img.mixology-img {
+        width: 159.55px;
+        height: 44.48px;
+        margin: 0px 181px;
+    }
+
+    .contact-info {
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 0px;
+        margin-right: 200px;
+    }
+
+    .intro-section {
+        width: 40%;
+        margin: auto;
+
+    }
+
+    .intro-section h1 {
+        font-size: 48px;
+        line-height: 48px;
+        margin-top: 121px;
+        margin-bottom: 32px;
+    }
+
+    .intro-section p {
+        font-size: 24px;
+        line-height: 24px;
+
+    }
+
+    .request-btn {
+        width: 209px;
+        height: 48px;
+        margin-top: 42px;
+    }
+
+    /* end of the main section */
