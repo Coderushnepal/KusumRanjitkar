@@ -255,6 +255,15 @@ p {
     display: none;
 }
 
+p.director-intro {
+    margin: 0px 0px;
+}
+
+p.message {
+    margin: 16px 0px;
+}
+
+
 .message-mobile-head {
     
     display: block;
@@ -270,13 +279,6 @@ p {
     font-size: 14px;
     line-height: 140.62%;
 
-}
-p.director-intro {
-    margin: 0px 0px;
-}
-
-p.message {
-    margin: 16px 0px;
 }
 
 .message {
@@ -481,7 +483,7 @@ line-height: 28px;
         width: 325px;
         height: 72px;
         display: block;
-    
+        margin-left: 44px;
         
     }
     .message-mobile-head {
@@ -498,6 +500,9 @@ line-height: 28px;
         margin: 16px 20px;
     }
 
+    
+    
+
     .msg-btn {
         width: 58px;
         height: 17px;
@@ -505,8 +510,9 @@ line-height: 28px;
         line-height: 17px;
         text-decoration-line: underline;
         color: #798BFE;
-        margin: 0px 20px 110px 20px;
-    
+        margin-left: 46px;
+    margin-top: 0px;
+    margin-bottom: 110px;
     }
 
     .dropdown1 {
@@ -533,9 +539,9 @@ line-height: 28px;
 		width: 49%;
 	}
 
-.training-section {
+  .training-section {
     text-align: center;
-}
+  }
     footer {
 		padding: 40px 0 16px;
 	}
@@ -575,33 +581,37 @@ line-height: 28px;
     
     .footer-bottom-left {
         font-size: 12px;
-line-height: 28px;
+      line-height: 28px;
     }
 }
-}
+  
     
 @media screen and (min-width: 1200px) {
     
         .nav-right {
             display: block;
         
-margin-left: 0px;
+  margin-left: 0px;
 
         }
+  .navbar {
+    display:block;
+  }
 
 
-
-.nav-button {
+  .nav-button {
     margin-left: 850px;
     width: 140px;
     height: 45px;
     display: inline;
-}
-        .dropdown1 {
-            display: none;
-        }
+   }
+        
+   .dropdown1 {
+        
+        display: none;
+    }
 
-        .container {
+    .container {
             max-width: 1140px;
         }
 
@@ -649,12 +659,15 @@ margin-left: 0px;
             line-height: 42px;
             width: 100%;
             margin-left: 0px;
-            
+        }
+
+        h3.message-head {
+            margin: 20px 0px 20px 20px;
         }
         .message-container-right {
             width: 50%;
         }
-
+    
         .message-mobile-head {
             display: none;
         }
@@ -670,12 +683,9 @@ margin-left: 0px;
            width: 100%;
             font-size: 16px;
             line-height: 20px;
-        
+            margin-top: 0px;
             
         }
-
-   
-
 
         .msg-btn {
             width: 77px;
@@ -733,11 +743,7 @@ margin-left: 0px;
             width: 20%;
         }
 
-        
- 
-
 }
-
 
 
 
