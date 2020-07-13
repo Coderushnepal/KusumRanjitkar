@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>question1</title>
+  <script type="text/javascript">
+
+
+    // answer 1
+    let row = 5;
+    function star() {
+      for (var i = row; i >= 1; i--) {
+        var str = '';
+        for (var j = 1; j <= i; j++) {
+          str = str + "*";
+        }
+        console.log(str);
+      }
+      return str;
+    }
+    star();
+
+
+    //answer  2
+    function sentence(string) {
+      let word = string.split(" ");
+      for (i = 0; i < word.length; i++) {
+        if (word[i].length > 4) {
+          word[i] = "*".repeat(word[i].length)
+        }
+      }
+      let result = word.join(" ");
+      return result;
+    }
+    sentence("The code is fourty");
+
+
+
+    // answer 3  
+    let data = { "1": 5, "2": 7, "3": 0, "4": 0, "5": 0 }
+
+    console.log(Object.entries(data));
+    
+
+    //answer 5
+    function to_array(obj) {
+      let keys = Object.keys(obj);
+      keys.sort();
+      let values = [];
+      for (i = 0; i < keys.length; i++) {
+        values[i] = obj[keys[i]];
+      }
+      return [keys, values];
+    }
+    console.log(to_array({ id: 1, name: "kusum", address: "dhulikhel" }));
+
+
+    //answer 4
+
+    
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
