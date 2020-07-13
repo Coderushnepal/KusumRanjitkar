@@ -51,7 +51,7 @@ a.contact {
 }
 
 .intro-section {
-    width: 75%;
+    width: 70%;
     text-align: center;
     margin: auto;
 
@@ -163,5 +163,392 @@ a.contact {
         height: 48px;
         margin-top: 42px;
     }
+}
 
     /* end of the main section */
+
+    /* start of the message */
+     .message-section { 
+        margin:auto;
+        text-align: center;
+    }
+    
+    .message-section img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    h2.girl-message {
+        font-family: Playfair Display;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 20px;
+text-align: center;
+margin: 20px 40px;
+    }
+
+    span.girl-name{
+        font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 16px;
+display: inline-block;
+text-transform: uppercase;
+color: #86899B;
+margin-bottom: 60px;
+    }
+
+
+
+    @media screen and (min-width: 768px) {
+        .container {
+            max-width: 768px;
+        }
+    
+        .main {
+            padding-bottom: 40px;
+    
+        }
+
+        
+     .message-section img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
+      h2.girl-message {
+     margin-top: 0px;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+span.girl-name {
+
+    font-size: 20px;
+line-height: 18px;
+
+ margin:0px 0px 80px;
+}
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .main {
+        padding: 23px 0;
+    }
+    .message-section {
+        width: 40%;
+        text-align: center;
+    }
+    .message-section img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 100px;
+        margin-bottom: 32px;
+    }
+h2.girl-message {
+   font-size: 32px;
+   line-height: 36px;
+
+}
+
+span.girl-name {
+
+   font-size: 16px;
+line-height: 16px;
+margin:0px;
+}
+
+.request-btn {
+    font-size: 20px;
+line-height: 20px;
+width: 209px;
+height: 48px;
+}
+
+}
+    /* end of the message */
+
+
+/* start of the feature section */
+.feature-mobile {
+    display: block;
+    text-align: center;
+}
+
+.feature-mobile span {
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 16px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #86899B;
+}
+
+.feature-mobile h2 {
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 30px;
+color: #2F3035;
+margin: 20px 45px;
+}
+.feature-mobile p, p.service-p{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+margin: 0 70px;
+color: rgba(47, 48, 53, 0.6);
+text-align: left;
+}
+
+.feature-mobile img {
+    width: 400px;
+    height: 300px;
+    margin: 20px 0px 60px 0px;
+}
+
+.feature-left {
+    display: none;
+}
+
+.feature-desktop {
+    display: none;
+}
+
+
+
+.feature1-right {
+    width: 80%;
+}
+.feature1-left {
+    width: 20%;
+}
+.feature1-left img{
+    width: 35px;
+    height: 35px;
+    /* margin-top: 0px;
+    align-items: right; */
+    position: relative;
+    top: -20px;
+    right: -10px;
+    
+}
+.feature1-right h3{
+    text-align: left;
+    margin-bottom: 16px;
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+color: #2F3035;
+}
+
+.feature1-right p{
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+color: rgba(47, 48, 53, 0.6);
+text-align: left;
+margin-left: 0px;
+margin-bottom: 40px;
+}
+
+
+
+
+
+
+@media screen and (min-width:768px ){
+
+    .container {
+        max-width: 768px;
+    }
+
+    .main {
+        padding-bottom: 40px;
+
+    }
+.feature-mobile {
+    display: block;
+}
+.feature-mobile span {
+    font-size: 24px;
+line-height: 30px;
+}
+
+.feature-mobile h2 {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 30px 80px 20px;
+}
+.feature-mobile p {
+    font-size: 26px;
+    line-height: 32px;
+    text-align: left;
+}
+
+ img.big-img {
+    width: 700px;
+    height: 500px;
+}
+
+.feature-desktop {
+display: none;
+}
+
+ img.big-img {
+    width: 600px;
+    height: 300px;
+    margin: 20px 0px 60px 0px;
+}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .main {
+        padding: 23px 0;
+    }
+.feature-mobile {
+    display: none;
+}
+
+.feature-desktop {
+    display: block;
+}
+
+.feature-left {
+    display: block;
+}
+
+.feature-right img {
+    
+    width: 480px;
+    height: 600px;
+}
+.feature-left{
+    margin-top: 100px;
+    text-align: center;
+    width:50%
+}
+.feature-right{
+    margin-top: 100px;
+    text-align: center;
+    width:50%;
+}
+
+.feature-left span {
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 16px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #86899B;
+width: 89%;
+text-align: left;
+margin-left: 150px;
+}
+
+.feature-left h2 {
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 36px;
+width: 62%;
+text-align: left;
+
+color: #2F3035;
+
+margin: 32px 44px 32px 218px;
+
+}
+ p.feature-paragraph {
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+color: rgba(47, 48, 53, 0.6);
+text-align: left;
+margin-left: 212px;
+margin-bottom: 64px;
+}
+
+.feature1-left {
+    width: 40%;
+}
+.feature1-right {
+    width: 60%;
+}
+
+.feature1-left img {
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    right: -90px;
+}
+
+}
+/* end of the feature section */
+
+
+
+
+img.icon1 {
+    top: 1px;
+    right: -50px;
+    width: 40px;
+    height: 40px;
+}
+
+
+@media screen and (min-width:768px) {
+    img.icon1 {
+    top: 1px;
+    right: -65px; 
+
+    }
+@media screen and (min-width:1200px) {
+
+    .service1, .service2, .service3, .service4 {
+        width: 50%;
+    }
+
+    img.icon1 {
+    top: 0px;
+    right: -170px; 
+    width: 40px;
+    height: 40px;
+}
+
+.service {
+    margin-top: 204px;
+}
+
