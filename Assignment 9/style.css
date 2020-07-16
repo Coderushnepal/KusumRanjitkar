@@ -47,7 +47,7 @@ a.contact {
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    margin: 24px 0;
+    margin: 24px 90px ;
 }
 
 .intro-section {
@@ -319,7 +319,7 @@ text-align: left;
 }
 
 .feature-mobile img {
-    width: 400px;
+    width: 300px;
     height: 300px;
     margin: 20px 0px 60px 0px;
 }
@@ -343,13 +343,10 @@ text-align: left;
 .feature1-left img{
     width: 35px;
     height: 35px;
-    /* margin-top: 0px;
-    align-items: right; */
-    position: relative;
-    top: -20px;
-    right: -10px;
-    
-}
+     margin-top: 0px;
+    }
+
+
 .feature1-right h3{
     text-align: left;
     margin-bottom: 16px;
@@ -489,7 +486,6 @@ text-transform: uppercase;
 color: #86899B;
 width: 89%;
 text-align: left;
-margin-left: 150px;
 }
 
 .feature-left h2 {
@@ -526,10 +522,7 @@ margin-bottom: 64px;
 }
 
 .feature1-left img {
-    width: 40px;
-    height: 40px;
-    top: 0px;
-    right: -90px;
+    margin-left: 120px;
 }
 
 }
@@ -539,10 +532,7 @@ margin-bottom: 64px;
 
 
 img.icon1 {
-    top: 1px;
-    right: -50px;
-    width: 40px;
-    height: 40px;
+    margin-left:40px;
 }
 
 .further-service {
@@ -553,16 +543,25 @@ img.icon1 {
 }
 
 @media screen and (min-width:768px) {
-    img.icon1 {
-    top: 1px;
-    right: -5px; 
 
+    .container {
+        max-width: 768px;
+    }
+
+    .main {
+        padding-bottom: 40px;
+    }
+
+
+    img.icon1 {
+margin-left: 10px;
     }
 
     
     .service1, .service2, .service3, .service4 {
         width: 50%;
     }
+}
 @media screen and (min-width:1200px) {
     .container {
         max-width: 1400px;
@@ -577,10 +576,10 @@ img.icon1 {
     }
 
     img.icon1 {
-    top: 0px;
-    right: -170px; 
-    width: 40px;
-    height: 40px;
+    
+width: 40px;
+height: 40px;
+    margin-left: 180px;
 }
 
 .service {
@@ -595,7 +594,7 @@ img.icon1 {
     
     padding-bottom: 1px;
 }
-}
+
 
 
 
@@ -610,6 +609,21 @@ text-transform: uppercase;
 color: rgba(255, 255, 255, 0.75);
 text-align: center;
 }
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .main {
+        padding: 23px 0;
+    }
+    .grey-section h4 {
+        font-size:20px;
+    }
+}
+
+
 @media screen and (min-width:1200px) {
     .container {
         max-width: 1400px;
@@ -622,7 +636,8 @@ text-align: center;
         text-align: left;
         margin-left: 220px;
         margin-top: 60px;
-    
+        
+
     }
 
 }
@@ -636,7 +651,7 @@ text-align: center;
 }
 
 .grey-section2 h1 {
-    font-family: Roboto;
+font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 font-size: 28px;
@@ -685,9 +700,9 @@ height: 48px;
 
 
 
-   @media screen and (min-width:1200px) {
+   @media screen and (min-width:768px) {
     .container {
-        max-width: 1400px;
+        max-width: 768px;
     }
 
     .main {
@@ -758,3 +773,4 @@ text-decoration-line: underline;
 color: #86899B;
 
 }
+
