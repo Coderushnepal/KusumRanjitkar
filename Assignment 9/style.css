@@ -85,7 +85,11 @@ a.contact {
     border-color: transparent;
     color: white;
     margin: 20px 50px;
+    cursor: pointer;
 }
+     
+    .request-btn:hover {background-color: #d1552c};
+
 
 /* To those devices whose viewport is 0-600px. */
 @media screen and (min-width: 768px) {
@@ -96,6 +100,11 @@ a.contact {
     .main {
         padding-bottom: 40px;
 
+    }
+    .clearfix:after {
+        content: '';
+        display: table;
+        clear: both;
     }
 
     .intro-section {
@@ -118,7 +127,11 @@ a.contact {
     .main {
         padding: 23px 0;
     }
-
+    .clearfix:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
     .intro-section {
         width: 40%;
         text-align: center;
@@ -376,6 +389,11 @@ margin-bottom: 40px;
 
 
 @media screen and (min-width:768px ){
+    .clearfix:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 
     .container {
         max-width: 768px;
@@ -531,9 +549,10 @@ margin-bottom: 64px;
 
 
 
-img.icon1 {
-    margin-left:40px;
-}
+ img.icon1 {
+     margin-left:40px; 
+    }
+
 
 .further-service {
     background-color:#2F3035;;
@@ -675,8 +694,11 @@ font-size: 20px;
 line-height: 20px;
 color: #FFFFFF;
 margin: 32px 20px;
+cursor: pointer;
+}
 
-
+.grey-btn1:hover{
+    background-color: rgb(104, 95, 93);
 }
 .grey-btn2 {
     background: #FFD300;
@@ -688,6 +710,10 @@ font-size: 20px;
 line-height: 20px;
 width: 209px;
 height: 48px;
+}
+
+.grey-btn2:hover{
+    background-color:#ecd449;
 }
 .grey-mob {
     display: block;
