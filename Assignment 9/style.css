@@ -47,7 +47,7 @@ a.contact {
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    margin: 24px 90px ;
+    margin: 24px 9px ;
 }
 
 .intro-section {
@@ -326,7 +326,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 20px;
 line-height: 24px;
-margin: 0 70px;
+margin: 0 20px;
 color: rgba(47, 48, 53, 0.6);
 text-align: left;
 }
@@ -352,6 +352,7 @@ text-align: left;
 }
 .feature1-left {
     width: 20%;
+    text-align: left;
 }
 .feature1-left img{
     width: 35px;
@@ -540,7 +541,7 @@ margin-bottom: 64px;
 }
 
 .feature1-left img {
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
 }
@@ -550,7 +551,7 @@ margin-bottom: 64px;
 
 
  img.icon1 {
-     margin-left:40px; 
+     /* margin-left:40px;  */
     }
 
 
