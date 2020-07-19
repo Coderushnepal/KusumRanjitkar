@@ -1,61 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+    .box {
+            height:85vh;
+            width: 90vh;
+            border: 2px solid black;
+            position: relative;
+            top:0px;
+            left: 300px;
+        } 
+        .btn {
+            width: 100px;
+            height: 40px;
+            position: relative;
+            top: 20px;
+            left: 500px;
+        }
+
         
-        .frame {
-      height: 65vh;
-      width: 90vh;
-      
-      margin: auto;
-      margin-top:30px;
-      border: 2px solid black;
-    }
-.btn {
-    margin-left: 200px;
-    width: 100px;
-
-}
-
-      
     </style>
 </head>
+
 <body>
-    <div class="frame" id="frame">
-<canvas style=" margin-left: 80px ;" class="canva" id="canv" width=600 height=600></canvas>
+    <div class="box" id="box"></div>
 
-<button style="position: relative; top: -165px; left: 30px;" class="btn" id="btnReset">Reset</button>
-</div>
+    <button id="btn" class="btn">Click Here</button>
 
-<script>
-   var num = 40;
-var radius = 6;
-var max = 400;
-createRandomNodes(40, 6, 400);
-
-var btnReset = document.getElementById("btnReset");
-btnReset.addEventListener("click", function() {
-    createRandomNodes(num, radius, max);
-});
-
-function createRandomNodes(num, radius, max) {
-    var canvas = document.getElementById("canv");
-    var context = canvas.getContext("2d");
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    for (var i = 0; i <=num; i++) {
-        context.beginPath();
-        var rand_x = Math.random(i) * max;
-        var rand_y = Math.random(i) * max;
-        context.arc(rand_x, rand_y, radius, 0, 2*Math.PI);
-        context.fill();
-        context.closePath();
-    }
-}
-</script>
-
+    <script>
+        var btn = document.getElementById("btn");
     
+        btn.addEventListener("click", function () {
+            var ball = document.createElement("div");
+            var box = document.getElementById("box");
+            ball.style.height = "40px";
+            ball.style.width = "40px";
+            ball.style.borderRadius = "50%";
+            ball.style.backgroundColor = "green";
+            ball.style.position = "absolute";
+            ball.style.top = Math.random() * (box.clientHeight -50) + "px";
+            ball.style.left = Math.random() * (box.clientWidth -50) + "px"
+            box.appendChild(ball);
+            });
+    </script>
 </body>
+
 </html>

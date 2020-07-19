@@ -6,33 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    .box {
+   .box {
             height:85vh;
             width: 90vh;
             border: 2px solid black;
+            position: relative;
+            top:0px;
+            left: 300px;
         } 
+        .btn {
+            width: 100px;
+            height: 40px;
+            position: relative;
+            top: 20px;
+            left: 500px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="box" id="box1"></div>
+    <div class="box" id="box"></div>
 
-    <button id="btn">Click</button>
+    <button id="btn" class="btn">Click</button>
 
     <script>
         var btn = document.getElementById("btn");
         var i=0;
         btn.addEventListener("click", function () {
             var ball = document.createElement("div");
-            var box = document.getElementById("box1");
+            var box = document.getElementById("box");
             ball.id= i;
             ball.style.height = "40px";
             ball.style.width = "40px";
             ball.style.borderRadius = "50%";
             ball.style.backgroundColor = "green";
             ball.style.position = "absolute";
-            ball.style.top = Math.random() * (box.clientHeight -40) + "px";
-            ball.style.left = Math.random() * (box.clientWidth -40) + "px"
+            ball.style.top = Math.random() * (box.clientHeight -50) + "px";
+            ball.style.left = Math.random() * (box.clientWidth -50) + "px"
             direction =1;
             
 
