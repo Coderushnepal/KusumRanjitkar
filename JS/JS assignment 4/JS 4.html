@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-   .box {
-            height:85vh;
+        .box {
+            height: 85vh;
             width: 90vh;
             border: 2px solid black;
             position: relative;
-            top:0px;
+            top: 0px;
             left: 300px;
-        } 
+        }
+
         .btn {
             width: 100px;
             height: 40px;
@@ -31,36 +32,36 @@
 
     <script>
         var btn = document.getElementById("btn");
-        var i=0;
+        var i = 0;
         btn.addEventListener("click", function () {
             var ball = document.createElement("div");
             var box = document.getElementById("box");
-            ball.id= i;
+            ball.id = i;
             ball.style.height = "40px";
             ball.style.width = "40px";
             ball.style.borderRadius = "50%";
             ball.style.backgroundColor = "green";
             ball.style.position = "absolute";
-            ball.style.top = Math.random() * (box.clientHeight -50) + "px";
-            ball.style.left = Math.random() * (box.clientWidth -50) + "px"
-            direction =1;
-            
+            ball.style.top = Math.random() * (box.clientHeight - 50) + "px";
+            ball.style.left = Math.random() * (box.clientWidth - 50) + "px"
 
-            ball.addEventListener("click",function(e){
-                setInterval (function() {
+
+            ball.addEventListener("click", function (e) {
+                var direction = 1;
+
+                setInterval(function () {
                     var currenttop = ball.style.top;
-                var nexttop = parseInt(currenttop )+10 * direction;
-                ball.style.top = nexttop + "px";
-                var clientHeight =box.clientHeight;
-                if ( nexttop>= clientHeight || nexttop <=0)
-                {
-               direction *=-1;
-                }
+                    var nexttop = parseInt(currenttop) + 10 * direction;
+                    ball.style.top = nexttop + "px";
+                    var clientHeight = box.clientHeight;
+                    if (nexttop >= (clientHeight - 40) || nexttop <= 0) {
+                        direction *= -1;
+                    }
 
-                }, 1000/60);
+                }, 1000 / 60);
 
-               
-                
+
+
             });
             box.appendChild(ball);
             i++;
