@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment 2</title>
 </head>
 
 <body>
     <script type="text/javascript">
 // Question 1
+console.log("QUESTION 1");
+console.log("Convert the list of names in array of object");
+
 var name_list = `Neeta sapkota
 Neha shiwakoti
 Srijana Khatiwada 
@@ -37,12 +40,15 @@ var newarr=name_list.map(function(value, index) {
 	});
 
 console.log(newarr);
-console.log("\n")
+console.log("\n");
+console.log("\n");
 
 
 
 
 // 2
+console.log("QUESTION NO 2")
+console.log(" function which takes a character and prints the count of first names which starts with letter that letter and which donot start with given letter.")
 function find(char) {
     var finder = newarr.filter(function(value) {
         return value.firstName.charAt(0) === char.toUpperCase();
@@ -59,6 +65,7 @@ console.log("\n")
 
 
 //question 3
+console.log("QUESTION NO 3")
 var final = newarr.reduce(function(acc,value,index){
 	var storeId = value.id;
 	delete value.id;
@@ -72,6 +79,8 @@ console.log("\n")
 
 
 //question 4
+console.log("QUESTION NO 4")
+console.log("function that returns the longest sequence of consecutive zeroes in a binary string")
 function longestZero(str) {
 	return str.split('1').sort().pop().length;
   }
@@ -80,9 +89,12 @@ function longestZero(str) {
   console.log(longestZero("100100100"));
   console.log(longestZero("11111"));
   console.log("\n")
+  console.log("\n")
 
 
   //question 5
+  console.log("QUESTION NO 5")
+  console.log("function that takes a string and replaces the vowels with another character")
   function replaceVowel(str) {
 	var strArr = str.split('');
 	for (var i = 0; i < str.length; i++) {

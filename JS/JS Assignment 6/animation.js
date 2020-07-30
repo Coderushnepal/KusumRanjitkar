@@ -11,8 +11,7 @@ function Animate() {
 			position.generateXY();
 			ball.setPosition(position.x, position.y);
 			balls.push(ball);
-			// ball.move();
-			var timeout = Math.random() * 7 * 1000;
+	       var timeout = Math.random() * 7 * 1000;
 			setTimeout(
 				(function() {
 					var currentBall = ball;
@@ -27,8 +26,8 @@ function Animate() {
 
 	this.removeBall = function() {
 		setInterval(function() {
-			balls.forEach(function(ball, index) {
-				if (!ball.isDeleted && ball.getPosition().x > window.innerHeight - ball.getDimension().h) {
+			balls.forEach(function(ball) {
+				if (!ball.isDeleted && ball.getPosition().y) {
 					ball.remove();
 				}
 			});
@@ -36,5 +35,5 @@ function Animate() {
 	};
 }
 var animate = new Animate();
-animate.start(600);
+animate.start(300);
 animate.removeBall();

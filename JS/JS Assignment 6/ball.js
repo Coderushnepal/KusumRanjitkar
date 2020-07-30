@@ -1,8 +1,6 @@
-function Position(width, height) {
-	//get arguements (width, height) ie (maxy,maxx)-coordinates of the area where we want to plot
-	var x = null;
-	var y = null;
+colors = ['red','blue','yellow','white','purple','green','orange','olive','pink'];
 
+function Position(width, height) {
 	this.generateXY = function() {
 		this.x = Math.random() * height;
 		this.y = Math.random() * width;
@@ -10,10 +8,7 @@ function Position(width, height) {
 }
 
 function Ball(i) {
-	var id = i;
-	var ball = null;
-	var interval = null;
-	this.isDeleteable = false;
+this.isDeleteable = false;
 	this.isDeleted = false;
 	var that = this;
 
@@ -21,8 +16,7 @@ function Ball(i) {
 		this.ball = document.createElement('div');
 		this.ball.id = i;
         this.ball.style.borderRadius = '50%';
-        colors = ['red','blue','yellow','white','purple','green','orange','olive','pink'];
-		this.ball.style.backgroundColor = colors[parseInt(Math.random() * colors.length)];
+       this.ball.style.backgroundColor = colors[parseInt(Math.random() * colors.length)];
 		this.ball.style.position = 'absolute';
 		document.body.appendChild(this.ball);
 
@@ -59,10 +53,9 @@ function Ball(i) {
 
 	this.move = function() {
 		this.isDeleteable = true;
-		var rand = Math.random();
 		this.interval = setInterval(() => {
 			var currentTop = parseInt(that.ball.style.top);
-			var nextTop = currentTop + (rand * 200) % 3 + 1;
+			var nextTop = currentTop + Math.random ()* 4;
 			that.ball.style.top = nextTop + 'px';
 		}, 1000 / 60);
 	};
